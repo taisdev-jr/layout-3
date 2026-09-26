@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Composto</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 100vh;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .nav {
+            background-color: #f05a7e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-side {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        .header {
+            background-color: #ff6f43;
+            padding: 40px;
+            text-align: right;
+        }
+
+        .main {
+            background-color: #008080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            background-color: #363062;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">NAV</div>
+    <div class="right-side">
+        <div class="header">HEADER</div>
+        <div class="main">MAIN</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>
